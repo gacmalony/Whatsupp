@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "541539820983",
+    "firebase_url": "https://whatsupp-clon-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "whatsupp-clon",
+    "storage_bucket": "whatsupp-clon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541539820983:android:3fb10434bfb8d55f0cf432",
+        "android_client_info": {
+          "package_name": "com.example.whatsupp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjb8S0iOfaDtkNOBK_Cbcr-iM7wVS7wjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
