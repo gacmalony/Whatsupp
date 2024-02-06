@@ -14,12 +14,17 @@ In this Project used, Firebase FireStore and Authentication. Structure model is 
 
 LOGIN SCREEN, LOGIN OPTION FOR NOW JUST ANONYM BUT WOULD TAKE UPDATE
 
+
+
 ![Screenshot 2024-02-06 183506](https://github.com/gacmalony/Whatsupp/assets/154236584/4988afa4-6730-49b2-8657-b1be938d6e31)
 
 
 
 
 AS I SAID INTERFACES ARE AWFUL, BUT EASY . IT WOULD TAKE UPDATE AS WELL.
+
+
+
 ![Screenshot 2024-02-06 183517](https://github.com/gacmalony/Whatsupp/assets/154236584/3aa0a254-94ef-4a30-91c3-cd89ad9cf878)
 
 
