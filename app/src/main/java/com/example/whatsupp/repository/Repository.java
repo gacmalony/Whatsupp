@@ -2,6 +2,7 @@ package com.example.whatsupp.repository;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
@@ -31,6 +32,8 @@ public class Repository {
     DatabaseReference reference;
     DatabaseReference messageReference;
 
+    MutableLiveData<List<ChatMessage>> messagesLiveData;
+
     public MutableLiveData<List<ChatMessage>> getMessagesLiveData(String groupName) {
         messageReference = firebaseDatabase.getReference().child(groupName);
         List<ChatMessage> messagesList = new ArrayList<>();
@@ -45,6 +48,7 @@ public class Repository {
                     ChatMessage message = dataSnapshot.getValue(ChatMessage.class);
                     messagesList.add(message);
                 }
+                messagesLiveData.postValue(messagesList);
             }
 
             @Override
@@ -52,11 +56,11 @@ public class Repository {
 
             }
         });
-        messagesLiveData.postValue(messagesList);
+
         return messagesLiveData;
     }
 
-    MutableLiveData<List<ChatMessage>> messagesLiveData;
+
 
     public Repository() {
         this.mutableLiveData = new MutableLiveData<>();
@@ -131,6 +135,8 @@ public class Repository {
                     messageText,
                     System.currentTimeMillis()
             );
+        Log.w("TAGK",messageText.toString());
+        Log.w("TAGK","Nothing");
 
             String randomKey = ref.push().getKey();
 

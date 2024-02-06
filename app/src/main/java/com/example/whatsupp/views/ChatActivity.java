@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.whatsupp.R;
@@ -29,6 +30,7 @@ public class ChatActivity extends AppCompatActivity {
 
     private List<ChatMessage> list;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,16 +43,20 @@ public class ChatActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         String groupName = getIntent().getStringExtra("GROUP_NAME");
+
         myViewModel.getGroupMessages(groupName).observe(this, new Observer<List<ChatMessage>>() {
             @Override
             public void onChanged(List<ChatMessage> chatMessages) {
                 list = new ArrayList<>();
                 list.addAll(chatMessages);
 
+                Log.w("TAGK","ChatActivity savepoint 1");
                 chatAdapter = new ChatAdapter(list, getApplicationContext());
+
 
                 recyclerView.setAdapter(chatAdapter);
                 chatAdapter.notifyDataSetChanged();
+
 
                 int latest_position = chatAdapter.getItemCount() -1;
                 if (latest_position >= 0){
@@ -66,7 +72,9 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String msg = binding.edittextChatMessage.getText().toString();
+                Log.w("TAGK","ChatAct savep 3"+msg);
                 myViewModel.sendMessage(msg, groupName);
+                Log.w("TAGK","ChatActivity savepoint 2");
 
                 binding.edittextChatMessage.getText().clear();
             }

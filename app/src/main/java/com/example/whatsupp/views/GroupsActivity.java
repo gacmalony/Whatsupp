@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -63,6 +64,8 @@ public class GroupsActivity extends AppCompatActivity {
                 myAdapter = new MyAdapter(chatGroupArrayList);
                 recyclerView.setAdapter(myAdapter);
                 myAdapter.notifyDataSetChanged();
+                Log.w("TAGK","GroupsAct savepoint 1");
+
             }
         });
 
@@ -77,6 +80,7 @@ public class GroupsActivity extends AppCompatActivity {
     public void showDialog(){
         chatGroupDialog = new Dialog(this);
         chatGroupDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        Log.w("TAGK","GroupsAct savepoint 2");
 
 
 

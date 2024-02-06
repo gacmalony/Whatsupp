@@ -11,6 +11,8 @@ import com.example.whatsupp.databinding.ActivityLoginBinding;
 import com.example.whatsupp.viewmodel.MyViewModel;
 import com.google.firebase.database.DataSnapshot;
 
+import kotlin.Unit;
+
 public class Login extends AppCompatActivity {
 
     MyViewModel myViewModel;
@@ -26,4 +28,5 @@ public class Login extends AppCompatActivity {
         activityLoginBinding.setVModel(myViewModel);
 
     }
+
 }

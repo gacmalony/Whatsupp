@@ -23,10 +23,12 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
 
     private Context context;
 
+
     public ChatAdapter(List<ChatMessage> messageList, Context context) {
         this.messageList = messageList;
         this.context = context;
     }
+
 
     @NonNull
     @Override
@@ -41,7 +43,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.getBinding().setVariable(BR.chatGroup,messageList.get(position));
+        holder.getBinding().setVariable(BR.chatMessage,messageList.get(position));
         holder.getBinding().executePendingBindings();
     }
 
