@@ -4,7 +4,7 @@ For know just i feel great to solve the issues.
 
 
 
-As you know whatsapp has did one of the most incredible impression since beginning of android history. This app provides an experience similar to Whatsapp, although could discuss how close. 
+As you know whatsapp did one of the most incredible impression since beginning of android history. This app provides an experience similar to Whatsapp, although could discuss how close. 
 
 
 
