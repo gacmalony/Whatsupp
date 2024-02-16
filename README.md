@@ -1,18 +1,12 @@
-This App would take update to layouts, I know Interfaces are looking awful. 
+This App would take updates to layouts, I know Interfaces are looking awful.
 
-For know just i feel great to solve the issues. 
+For now, just i feel great about solving the issues.
 
+As you know WhatsApp has made one of the most incredible impressions since the beginning of Android history. This app provides an experience similar to WhatsApp, although could discuss how close.
 
+In this Project, Firebase FireStore and Authentication. The structure model is MVVM and of course to bind the layouts and adapters, DataBinding!!
 
-As you know whatsapp did one of the most incredible impression since beginning of android history. This app provides an experience similar to Whatsapp, although could discuss how close. 
-
-
-
-In this Project used, Firebase FireStore and Authentication. Structure model is MVVM and of course to bind the layouts and adapters, DataBinding!!
-
-
-
-LOGIN SCREEN, LOGIN OPTION FOR NOW JUST ANONYM BUT WOULD TAKE UPDATE
+LOGIN SCREEN, THE LOGIN OPTION FOR NOW IS JUST ANONYM BUT WOULD TAKE AN UPDATE
 
 
 
@@ -21,7 +15,7 @@ LOGIN SCREEN, LOGIN OPTION FOR NOW JUST ANONYM BUT WOULD TAKE UPDATE
 
 
 
-AS I SAID INTERFACES ARE AWFUL, BUT EASY . IT WOULD TAKE UPDATE AS WELL.
+AS I SAID INTERFACES ARE AWFUL, BUT EASY . IT WOULD TAKE AN UPDATE AS WELL.
 
 
 
